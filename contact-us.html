@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Us | St. Joseph’s Matriculation Higher Secondary School</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed-variant": "#544600",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#708ab5",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#004e59",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#aec7f6",
+                        "outline": "#74777f",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e1e2e6",
+                        "on-secondary-fixed": "#221b00",
+                        "on-error-container": "#93000a",
+                        "secondary": "#705d00",
+                        "tertiary-container": "#00262c",
+                        "surface": "#f8f9fd",
+                        "tertiary": "#000d10",
+                        "surface-container-low": "#f3f3f7",
+                        "primary": "#000a1e",
+                        "surface-tint": "#465f88",
+                        "on-tertiary-container": "#0097a9",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#edeef2",
+                        "inverse-primary": "#aec7f6",
+                        "secondary-fixed": "#ffe16d",
+                        "secondary-fixed-dim": "#e9c400",
+                        "surface-bright": "#f8f9fd",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#001f24",
+                        "background": "#f8f9fd",
+                        "on-background": "#191c1f",
+                        "outline-variant": "#c4c6cf",
+                        "secondary-container": "#fcd400",
+                        "tertiary-fixed-dim": "#55d7ed",
+                        "on-surface-variant": "#44474e",
+                        "primary-fixed": "#d6e3ff",
+                        "on-surface": "#191c1f",
+                        "surface-variant": "#e1e2e6",
+                        "primary-container": "#002147",
+                        "surface-container-high": "#e7e8ec",
+                        "on-primary-fixed": "#001b3d",
+                        "inverse-surface": "#2e3134",
+                        "tertiary-fixed": "#9eefff",
+                        "inverse-on-surface": "#f0f0f5",
+                        "on-secondary-container": "#6e5c00",
+                        "surface-dim": "#d9dade",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "school-blue": "#005596",
+                        "school-dark": "#002147",
+                        "school-accent": "#ffb400"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(0, 33, 71, 0.8), rgba(0, 33, 71, 0.55));
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+    <div class="bg-primary-container text-white py-2 px-8 hidden md:block border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-xs font-label uppercase tracking-widest">
+            <div class="flex gap-6">
+                <a class="hover:text-secondary-fixed transition-colors flex items-center gap-2" href="#"><span
+                        class="material-symbols-outlined text-sm">mail</span> contact@stjosephs.edu</a>
+                <a class="hover:text-secondary-fixed transition-colors flex items-center gap-2" href="#"><span
+                        class="material-symbols-outlined text-sm">phone_in_talk</span> +91 44 2345 6789</a>
+            </div>
+            <div class="flex gap-6 items-center">
+                <a class="hover:text-secondary-fixed transition-colors" href="index.html">Home</a>
+                <a class="hover:text-secondary-fixed transition-colors" href="#contact-section">Contact</a>
+            </div>
+        </div>
+    </div>
+    <header class="w-full z-50 bg-white relative">
+        <div class="max-w-screen-2xl mx-auto w-full relative overflow-hidden">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 px-4 md:px-0 py-4">
+                <div class="flex items-center gap-4 md:gap-8 z-10">
+                    <img src="assets/images/Header-final.jpg" alt="St. Joseph's School Logo" class="h-16 object-contain" />
+                </div>
+                <button class="xl:hidden p-2 text-school-dark" onclick="toggleNav()">
+                    <span class="material-symbols-outlined text-4xl">menu</span>
+                </button>
+            </div>
+            <nav class="bg-[#005596] shadow-md hidden xl:block">
+                <div class="max-w-screen-2xl mx-auto px-4">
+                    <div class="flex items-stretch text-[13px] font-bold text-white uppercase tracking-wider">
+                        <a class="px-6 py-4 flex items-center hover:bg-[#ffb400] hover:text-school-dark transition-colors" href="index.html">Home</a>
+                        <div class="w-px bg-white/20 self-stretch"></div>
+                        <div class="relative group">
+                            <button class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center gap-1" type="button">
+                                About Us
+                                <span class="material-symbols-outlined text-base transition-transform group-hover:-rotate-180">expand_more</span>
+                            </button>
+                            <div class="absolute left-0 top-full mt-2 hidden group-hover:block w-64 rounded-[1.5rem] bg-white text-primary shadow-2xl border border-slate-200 overflow-hidden z-50">
+                                <a class="block px-5 py-3 hover:bg-slate-100" href="#">Our Story</a>
+                                <a class="block px-5 py-3 hover:bg-slate-100" href="#">Vision & Mission</a>
+                                <a class="block px-5 py-3 hover:bg-slate-100" href="#">Campus & History</a>
+                            </div>
+                        </div>
+                        <div class="w-px bg-white/20 self-stretch"></div>
+                        <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Academics</a>
+                        <div class="w-px bg-white/20 self-stretch"></div>
+                        <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Management</a>
+                        <div class="w-px bg-white/20 self-stretch"></div>
+                        <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Faculty</a>
+                        <div class="w-px bg-white/20 self-stretch"></div>
+                        <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Students</a>
+                        <div class="w-px bg-white/20 self-stretch"></div>
+                        <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">PTA</a>
+                        <div class="w-px bg-white/20 self-stretch"></div>
+                        <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Alumni</a>
+                        <div class="w-px bg-white/20 self-stretch"></div>
+                        <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Gallery</a>
+                        <div class="w-px bg-white/20 self-stretch"></div>
+                        <a class="px-5 py-4 bg-[#ffb400] text-school-dark flex items-center" href="contact-us.html">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+            <div id="sideNav" class="fixed inset-y-0 right-0 z-50 hidden w-[88vw] max-w-sm bg-white shadow-2xl xl:hidden">
+                <div class="flex items-center justify-between border-b border-slate-200 px-6 py-4">
+                    <span class="text-lg font-bold text-slate-900">Menu</span>
+                    <button onclick="toggleNav()" class="p-2 text-school-dark">
+                        <span class="material-symbols-outlined text-3xl">close</span>
+                    </button>
+                </div>
+                <div class="px-6 py-4 space-y-1">
+                    <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="index.html">Home</a>
+                    <button type="button" onclick="toggleAboutSubmenu()" class="w-full flex items-center justify-between rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100">
+                        <span>About Us</span>
+                        <span id="mobileAboutChevron" class="material-symbols-outlined transition-transform">expand_more</span>
+                    </button>
+                    <div id="mobileAboutSubmenu" class="hidden space-y-1 px-4">
+                        <a class="block rounded-2xl px-4 py-3 text-slate-700 hover:bg-slate-100" href="#">Our Story</a>
+                        <a class="block rounded-2xl px-4 py-3 text-slate-700 hover:bg-slate-100" href="#">Vision & Mission</a>
+                        <a class="block rounded-2xl px-4 py-3 text-slate-700 hover:bg-slate-100" href="#">Campus & History</a>
+                    </div>
+                    <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Academics</a>
+                    <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Management</a>
+                    <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Faculty</a>
+                    <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Students</a>
+                    <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">PTA</a>
+                    <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Alumni</a>
+                    <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Gallery</a>
+                    <a class="block rounded-2xl px-4 py-3 bg-[#ffb400] text-school-dark font-semibold hover:bg-[#e0a300]" href="contact-us.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="relative overflow-hidden bg-cover bg-center" style="background-image:url('assets/images/slider01.jpg');">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative max-w-7xl mx-auto px-8 py-28 text-white">
+            <nav class="text-sm font-label uppercase tracking-[0.4em] text-white/70 mb-4">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <span class="mx-3">/</span>
+                <span class="text-white">Contact Us</span>
+            </nav>
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-2xl font-headline font-extrabold tracking-tight text-white">Contact Us</h1>
+            </div>
+        </div>
+    </section>
+    <section id="contact-section" class="py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid gap-12 lg:grid-cols-[1.1fr_1fr] items-start">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <p class="text-secondary font-label font-bold uppercase tracking-widest text-sm">Contact Information</p>
+                        <h2 class="text-4xl font-headline font-extrabold text-primary">We’re here to help you every step of the way.</h2>
+                        <p class="text-on-surface-variant leading-relaxed">Reach our admissions team, administrative office or support staff through the details below. We will respond within one business day.</p>
+                    </div>
+                    <div class="grid gap-6 sm:grid-cols-2">
+                        <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+                            <div class="flex items-center justify-center w-14 h-14 rounded-2xl bg-school-dark/10 text-school-dark mb-4">
+                                <span class="material-symbols-outlined">location_on</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-3">School Address</h3>
+                            <p class="text-slate-600">Bishop's House Campus, Nagercoil, Kanyakumari Dt, Tamilnadu - 629 001</p>
+                        </div>
+                        <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+                            <div class="flex items-center justify-center w-14 h-14 rounded-2xl bg-school-dark/10 text-school-dark mb-4">
+                                <span class="material-symbols-outlined">phone</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-3">Call Us</h3>
+                            <p class="text-slate-600">04652-279252 (H.S.S)</p>
+                            <p class="text-slate-600">04652-279718 (Primary)</p>
+                        </div>
+                        <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+                            <div class="flex items-center justify-center w-14 h-14 rounded-2xl bg-school-dark/10 text-school-dark mb-4">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-3">Email Us</h3>
+                            <p class="text-slate-600">stjosephmhss1981@gmail.com</p>
+                        </div>
+                        <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+                            <div class="flex items-center justify-center w-14 h-14 rounded-2xl bg-school-dark/10 text-school-dark mb-4">
+                                <span class="material-symbols-outlined">schedule</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-3">Office Hours</h3>
+                            <p class="text-slate-600">Mon – Fri: 8:30 AM – 4:30 PM</p>
+                            <p class="text-slate-600">Sat: 9:00 AM – 1:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-[3rem] bg-white p-8 shadow-2xl border border-slate-200">
+                    <h3 class="text-3xl font-headline font-extrabold text-primary mb-6">Send a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid gap-6 sm:grid-cols-2">
+                            <label class="block">
+                                <span class="text-sm font-semibold text-slate-700">Full Name</span>
+                                <input type="text" placeholder="Your name" class="mt-2 w-full rounded-3xl border border-slate-300 bg-surface-container px-4 py-4 text-sm text-primary outline-none focus:border-school-blue focus:ring-2 focus:ring-school-blue/20" />
+                            </label>
+                            <label class="block">
+                                <span class="text-sm font-semibold text-slate-700">Email address</span>
+                                <input type="email" placeholder="you@example.com" class="mt-2 w-full rounded-3xl border border-slate-300 bg-surface-container px-4 py-4 text-sm text-primary outline-none focus:border-school-blue focus:ring-2 focus:ring-school-blue/20" />
+                            </label>
+                        </div>
+                        <label class="block">
+                            <span class="text-sm font-semibold text-slate-700">Subject</span>
+                            <input type="text" placeholder="What is this about?" class="mt-2 w-full rounded-3xl border border-slate-300 bg-surface-container px-4 py-4 text-sm text-primary outline-none focus:border-school-blue focus:ring-2 focus:ring-school-blue/20" />
+                        </label>
+                        <label class="block">
+                            <span class="text-sm font-semibold text-slate-700">Message</span>
+                            <textarea rows="6" placeholder="Write your message here" class="mt-2 w-full rounded-3xl border border-slate-300 bg-surface-container px-4 py-4 text-sm text-primary outline-none focus:border-school-blue focus:ring-2 focus:ring-school-blue/20"></textarea>
+                        </label>
+                        <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-school-blue px-8 py-4 text-sm font-bold uppercase tracking-widest text-white shadow-xl shadow-school-blue/20 hover:bg-[#00477d] transition-colors">Submit Message <span class="material-symbols-outlined">send</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map-section" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid gap-12 lg:grid-cols-1 items-center">
+                <div class="overflow-hidden rounded-[2.5rem] border border-slate-200 shadow-xl">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15797.053404281663!2d77.416599!3d8.176203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f0e7621d1dd1%3A0xee871aca785ad77a!2sSt.Joseph&#39;s%20Matriculation%20HSS%20Nagercoil!5e0!3m2!1sen!2sin!4v1778303969789!5m2!1sen!2sin" width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary-container text-blue-200 py-14">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-col gap-6 md:flex-row md:justify-between md:items-center">
+                <p class="text-sm">© 2026 St. Joseph's School, Nagercoil. All rights reserved.</p>
+                <div class="flex flex-wrap gap-4 text-sm">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="#contact-section" class="hover:text-white transition-colors">Contact</a>
+                    <a href="#map-section" class="hover:text-white transition-colors">Location</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleNav() {
+            document.getElementById('sideNav').classList.toggle('hidden');
+        }
+        function toggleAboutSubmenu() {
+            var submenu = document.getElementById('mobileAboutSubmenu');
+            var chevron = document.getElementById('mobileAboutChevron');
+            submenu.classList.toggle('hidden');
+            chevron.classList.toggle('rotate-180');
+        }
+    </script>
+</body>
+</html>

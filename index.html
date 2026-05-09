@@ -1,0 +1,855 @@
+<html class="scroll-smooth" lang="en">
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>St. Joseph’s Matriculation Higher Secondary School | The Academic Luminary</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed-variant": "#544600",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#708ab5",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#004e59",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#aec7f6",
+                        "outline": "#74777f",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e1e2e6",
+                        "on-secondary-fixed": "#221b00",
+                        "on-error-container": "#93000a",
+                        "secondary": "#705d00",
+                        "tertiary-container": "#00262c",
+                        "surface": "#f8f9fd",
+                        "tertiary": "#000d10",
+                        "surface-container-low": "#f3f3f7",
+                        "primary": "#000a1e",
+                        "surface-tint": "#465f88",
+                        "on-tertiary-container": "#0097a9",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#edeef2",
+                        "inverse-primary": "#aec7f6",
+                        "secondary-fixed": "#ffe16d",
+                        "secondary-fixed-dim": "#e9c400",
+                        "surface-bright": "#f8f9fd",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#001f24",
+                        "background": "#f8f9fd",
+                        "on-background": "#191c1f",
+                        "outline-variant": "#c4c6cf",
+                        "secondary-container": "#fcd400",
+                        "tertiary-fixed-dim": "#55d7ed",
+                        "on-surface-variant": "#44474e",
+                        "primary-fixed": "#d6e3ff",
+                        "on-surface": "#191c1f",
+                        "surface-variant": "#e1e2e6",
+                        "primary-container": "#002147",
+                        "surface-container-high": "#e7e8ec",
+                        "on-primary-fixed": "#001b3d",
+                        "inverse-surface": "#2e3134",
+                        "tertiary-fixed": "#9eefff",
+                        "inverse-on-surface": "#f0f0f5",
+                        "on-secondary-container": "#6e5c00",
+                        "surface-dim": "#d9dade",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "school-blue": "#005596",
+                        "school-dark": "#002147",
+                        "school-accent": "#ffb400"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .wave-divider {
+            fill: #f8f9fd;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(0, 33, 71, 0.9), rgba(0, 33, 71, 0.4));
+        }
+
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .branding-gradient {
+            background: linear-gradient(135deg, transparent 55%, #005596 55%, #002147 100%);
+        }
+
+        @media (max-width: 1023px) {
+            .branding-gradient {
+                background: #fff;
+            }
+        }
+
+        /* Flash News horizontal marquee only */
+        .flash-news-marquee {
+            display: flex;
+            width: max-content;
+            animation: flashNewsMarquee 30s linear infinite;
+        }
+
+        @keyframes flashNewsMarquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .news-scroll {
+            display: flex;
+            gap: 1.5rem;
+            animation: scrollNews 24s linear infinite;
+            will-change: transform;
+        }
+
+        .news-scroll:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scrollNews {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+    </head>
+    <!-- Top Utility Bar -->
+    <div class="bg-primary-container text-white py-2 px-8 hidden md:block border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-xs font-label uppercase tracking-widest">
+            <div class="flex gap-6">
+                <a class="hover:text-secondary-fixed transition-colors flex items-center gap-2" href="#"><span
+                        class="material-symbols-outlined text-sm">mail</span> contact@stjosephs.edu</a>
+                <a class="hover:text-secondary-fixed transition-colors flex items-center gap-2" href="#"><span
+                        class="material-symbols-outlined text-sm">phone_in_talk</span> +91 44 2345 6789</a>
+            </div>
+            <div class="flex gap-6 items-center">
+                <a class="hover:text-secondary-fixed transition-colors" href="#">Quick Links</a>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="w-full z-50 bg-white relative">
+        <!-- Branding Area -->
+        <div class="max-w-screen-2xl mx-auto w-full relative overflow-hidden">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 px-4 md:px-0">
+                <div class="flex items-center gap-4 md:gap-8 z-10">
+                    <img src="assets/images/Header-final.jpg" alt="">
+                </div>
+                <!-- Mobile Menu Toggle -->
+                <button class="xl:hidden p-2 text-school-dark" onclick="toggleNav()">
+                    <span class="material-symbols-outlined text-4xl">menu</span>
+                </button>
+            </div>
+        <!-- Navigation Bar -->
+        <nav class="bg-[#005596] shadow-md hidden xl:block">
+            <div class="max-w-screen-2xl mx-auto px-4">
+                <div class="flex items-stretch text-[13px] font-bold text-white uppercase tracking-wider">
+                    <a class="bg-[#ffb400] text-school-dark px-6 py-4 flex items-center" href="#">Home</a>
+                    <div class="w-px bg-white/20 self-stretch"></div>
+                    <div class="relative group">
+                        <button class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center gap-1" type="button">
+                            About Us
+                            <span class="material-symbols-outlined text-base transition-transform group-hover:-rotate-180">expand_more</span>
+                        </button>
+                        <div class="absolute left-0 top-full mt-2 hidden group-hover:block w-64 rounded-[1.5rem] bg-white text-primary shadow-2xl border border-slate-200 overflow-hidden z-50">
+                            <a class="block px-5 py-3 hover:bg-slate-100" href="#">Our Story</a>
+                            <a class="block px-5 py-3 hover:bg-slate-100" href="#">Vision & Mission</a>
+                            <a class="block px-5 py-3 hover:bg-slate-100" href="#">Campus & History</a>
+                        </div>
+                    </div>
+                    <div class="w-px bg-white/20 self-stretch"></div>
+                    <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Academics</a>
+                    <div class="w-px bg-white/20 self-stretch"></div>
+                    <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Management</a>
+                    <div class="w-px bg-white/20 self-stretch"></div>
+                    <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Faculty</a>
+                    <div class="w-px bg-white/20 self-stretch"></div>
+                    <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Students</a>
+                    <div class="w-px bg-white/20 self-stretch"></div>
+                    <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">PTA</a>
+                    <div class="w-px bg-white/20 self-stretch"></div>
+                    <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Alumni</a>
+                    <div class="w-px bg-white/20 self-stretch"></div>
+                    <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Gallery</a>
+                    <div class="w-px bg-white/20 self-stretch"></div>
+                    <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="contact-us.html">Contact Us</a>
+                    <div class="w-px bg-white/20 self-stretch"></div>
+                    <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">Parent Login</a>
+                    <div class="w-px bg-white/20 self-stretch"></div>
+                    <a class="px-5 py-4 hover:bg-white/10 transition-colors flex items-center" href="#">News Letter</a>
+                </div>
+            </div>
+        </nav>
+        <div id="sideNav" class="fixed inset-y-0 right-0 z-50 hidden w-[88vw] max-w-sm bg-white shadow-2xl xl:hidden">
+            <div class="flex items-center justify-between border-b border-slate-200 px-6 py-4">
+                <span class="text-lg font-bold text-slate-900">Menu</span>
+                <button onclick="toggleNav()" class="p-2 text-school-dark">
+                    <span class="material-symbols-outlined text-3xl">close</span>
+                </button>
+            </div>
+            <div class="px-6 py-4 space-y-1">
+                <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Home</a>
+                <button type="button" onclick="toggleAboutSubmenu()" class="w-full flex items-center justify-between rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100">
+                    <span>About Us</span>
+                    <span id="mobileAboutChevron" class="material-symbols-outlined transition-transform">expand_more</span>
+                </button>
+                <div id="mobileAboutSubmenu" class="hidden space-y-1 px-4">
+                    <a class="block rounded-2xl px-4 py-3 text-slate-700 hover:bg-slate-100" href="#">Our Story</a>
+                    <a class="block rounded-2xl px-4 py-3 text-slate-700 hover:bg-slate-100" href="#">Vision & Mission</a>
+                    <a class="block rounded-2xl px-4 py-3 text-slate-700 hover:bg-slate-100" href="#">Campus & History</a>
+                </div>
+                <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Academics</a>
+                <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Management</a>
+                <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Faculty</a>
+                <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Students</a>
+                <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">PTA</a>
+                <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Alumni</a>
+                <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Gallery</a>
+                <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="contact-us.html">Contact Us</a>
+                <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">Parent Login</a>
+                <a class="block rounded-2xl px-4 py-3 text-slate-900 font-semibold hover:bg-slate-100" href="#">News Letter</a>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative min-h-[921px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img alt="Campus" class="w-full h-full object-cover scale-110"
+                src="assets/images/slider01.jpg"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-8 w-full mt-20">
+            <div class="max-w-3xl space-y-8">
+                <span
+                    class="inline-block bg-secondary-container text-on-secondary-container font-label text-sm px-4 py-1.5 rounded-full font-bold uppercase tracking-widest">Excellence
+                    in Education Since 1985</span>
+                <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-white leading-[0.9] tracking-tighter">
+                    Illuminating Minds, <br /><span class="text-secondary-fixed">Inspiring Futures.</span></h2>
+                <p class="text-xl text-white/80 max-w-xl font-body leading-relaxed">Nurturing the next generation of
+                    global leaders through holistic education, cutting-edge technology, and unwavering moral values.</p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <button
+                        class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-sm hover:translate-y-[-4px] transition-all shadow-xl shadow-secondary-container/30">Explore
+                        Campus</button>
+                    <button
+                        class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-sm hover:bg-white hover:text-primary transition-all">Admission
+                        Enquiry</button>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50">
+            <span class="text-[10px] uppercase tracking-widest font-bold">Scroll</span>
+            <div class="w-px h-12 bg-gradient-to-b from-white/50 to-transparent"></div>
+        </div>
+    </section>
+    <!-- Flash News Bar -->
+    <div class="bg-[#203f9a] text-white py-3 relative z-20">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center gap-3 px-4 md:px-6">
+            <div class="flex items-center gap-3 bg-[#1d2f75] px-5 py-3 rounded-xl shadow-lg shadow-black/10">
+                <span class="material-symbols-outlined text-white text-xl">campaign</span>
+                <span class="font-bold uppercase tracking-widest text-base">Flash News</span>
+            </div>
+            <div class="flex-1 min-w-0 overflow-hidden rounded-xl bg-[#1eb54d] py-3 px-5">
+                <div class="flex items-center gap-12 flash-news-marquee whitespace-nowrap text-sm font-semibold uppercase tracking-wider text-white">
+                    <span class="flex items-center gap-3"><span class="material-symbols-outlined">arrow_forward</span> Analysis for School Bus → Sports Fest – 2024 | Live at 08.00 AM | 18-10-24</span>
+                    <span class="flex items-center gap-3"><span class="material-symbols-outlined">arrow_forward</span> Admissions open for Academic Year 2024-25</span>
+                    <span class="flex items-center gap-3"><span class="material-symbols-outlined">arrow_forward</span> Annual Sports Meet scheduled for next Friday</span>
+                    <span class="flex items-center gap-3"><span class="material-symbols-outlined">arrow_forward</span> Our students won the Zonal Level Debate Competition</span>
+                    <span class="flex items-center gap-3"><span class="material-symbols-outlined">arrow_forward</span> New STEM Lab inaugurated by the Education Minister</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quick Access Section (Updated per Edit Request) -->
+    <section class="py-10 px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24">
+            <!-- About Us -->
+            <a class="group flex flex-col items-center gap-6" href="#">
+                <div
+                    class="w-32 h-32 md:w-48 md:h-48 rounded-[2rem] bg-school-dark flex items-center justify-center p-6 transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl">
+                    <div class="w-full h-full rounded-full bg-[#26C6DA] flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-7xl md:text-9xl"
+                            style="font-variation-settings: 'FILL' 1; font-size: 80px;">groups</span>
+                    </div>
+                </div>
+                <span
+                    class="font-headline font-extrabold text-primary uppercase tracking-widest text-sm md:text-lg">About
+                    Us</span>
+            </a>
+            <!-- Students -->
+            <a class="group flex flex-col items-center gap-6" href="#">
+                <div
+                    class="w-32 h-32 md:w-48 md:h-48 rounded-[2rem] bg-[#4682B4] flex items-center justify-center p-6 transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl">
+                    <div class="w-full h-full rounded-full bg-[#FFB400] flex items-center justify-center text-7xl">
+                        <span class="material-symbols-outlined text-white text-7xl md:text-9xl"
+                            style="font-variation-settings: 'FILL' 1; font-size: 80px">person</span>
+                    </div>
+                </div>
+                <span
+                    class="font-headline font-extrabold text-primary uppercase tracking-widest text-sm md:text-lg">Students</span>
+            </a>
+            <!-- Fees -->
+            <a class="group flex flex-col items-center gap-6" href="#">
+                <div
+                    class="w-32 h-32 md:w-48 md:h-48 rounded-[2rem] bg-[#1A237E] flex items-center justify-center p-6 transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl">
+                    <div class="w-full h-full rounded-full bg-[#26C6DA] flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-7xl md:text-9xl"
+                            style="font-variation-settings: 'FILL' 1; font-size: 80px">payments</span>
+                    </div>
+                </div>
+                <span
+                    class="font-headline font-extrabold text-primary uppercase tracking-widest text-sm md:text-lg">Fees</span>
+            </a>
+            <!-- Gallery -->
+            <a class="group flex flex-col items-center gap-6" href="#">
+                <div
+                    class="w-32 h-32 md:w-48 md:h-48 rounded-[2rem] bg-[#29B6F6] flex items-center justify-center p-6 transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl">
+                    <div class="w-full h-full rounded-full bg-[#FFB400] flex items-center justify-center">
+                        <span class="material-symbols-outlined w-[90px] h-[90px] text-white text-7xl md:text-9xl"
+                            style="font-variation-settings: 'FILL' 1; font-size: 80px">image</span>
+                    </div>
+                </div>
+                <span
+                    class="font-headline font-extrabold text-primary uppercase tracking-widest text-sm md:text-lg">Gallery</span>
+            </a>
+        </div>
+    </section>
+    <!-- Welcome Section -->
+    <section class="py-24 bg-surface overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary-fixed opacity-20 rounded-full blur-3xl">
+                </div>
+                <div class="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl">
+                    <img alt="Students"
+                        class="w-full h-[600px] object-cover hover:scale-105 transition-transform duration-700"
+                        src="assets/images/about.jpg" />
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-white p-8 rounded-3xl shadow-xl max-w-xs hidden md:block">
+                    <p class="text-primary font-bold text-lg leading-tight">Empowering over <span
+                            class="text-secondary text-2xl">2500+</span> students yearly.</p>
+                </div>
+            </div>
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <h3 class="text-secondary font-label font-bold uppercase tracking-widest text-sm">Welcome to</h3>
+                    <h2 class="text-4xl font-headline font-extrabold text-primary leading-tight">St.Joseph's School, Nagercoil</h2>
+                </div>
+                <p class="text-on-surface-variant text-lg leading-relaxed">St. Joseph's Matriculation Higher Secondary School was established in 1981 as a Primary English Medium School, by the Roman Catholic Diocese of Kottar, a Religious Minority. The Bishop of the Diocese is the manager of the school and he appoints a Priest of the Diocese, as its Correspondent and another Priest if needed as the Co-Correspondent. The sisters of Charity of St. Anne have been rendering their services towards the growth of the Institution since 1984. In the academic year 1997-1998, the school was upgraded into a Matriculation School with Std. VI and in the year 2002-2003, it was again upgraded as Matriculation Higher Secondary School with Std. XI. Stds I to X are affiliated to the Matriculation Board and Stds XI and XII to the Higher Secondary Board of the Government of Tamil Nadu.</p>
+                <div class="grid grid-cols-2 gap-8 py-4">
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-secondary text-3xl">verified</span>
+                        <div>
+                            <h4 class="font-bold text-primary">Accredited Excellence</h4>
+                            <p class="text-sm text-on-surface-variant">Recognized for top-tier academic results.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-secondary text-3xl">psychology</span>
+                        <div>
+                            <h4 class="font-bold text-primary">Modern Pedagogy</h4>
+                            <p class="text-sm text-on-surface-variant">Focus on critical thinking and STEM.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="flex items-center gap-3 text-primary-container font-bold group">
+                    Learn More About Our Journey
+                    <span
+                        class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Management Speak -->
+    <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl font-headline font-extrabold text-primary">From the Leadership</h2>
+                <div class="w-20 h-1.5 bg-secondary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="bg-surface rounded-[2.5rem] p-10 relative overflow-hidden group shadow-lg hover:shadow-2xl transition-all">
+                    <span
+                        class="material-symbols-outlined text-8xl absolute -top-4 -right-4 text-primary-container/5 select-none"
+                        style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                    <div class=" flex-col md:flex-row gap-8 items-center md:items-start relative z-10">
+                        <img alt="Correspondent"
+                            class="w-32 h-32 rounded-full object-cover border-4 border-secondary/20 shadow-md"
+                            src="assets/images/magament01.jpeg" />
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-bold text-primary">Fr. A. Selvan</h3>
+                            <p class="text-secondary font-label font-bold uppercase tracking-widest text-xs">
+                                Correspondent</p>
+                            <p class="text-on-surface-variant italic leading-relaxed">"Greetings and prayerful wishes from St. Joseph’s Matriculation Hr. Sec. School!
+Respected Staff members, honourable Parents and loving Students,
+A warm welcome to the academic year 2023 – 2024. At the very outset, I would like to register my sentiments of gladness and gratitude for your grant welcome given to me as the new correspondent. It’s worth recalling the five pillars of this great institution St. Joseph’s Matric Higher Secondary School namely: Faith in God Persuit of academic excellence Social responsibility Love and concern for others Wholistic development. And never ever forget, the greatest discovery of our generation is that Education can transform the society especially"</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface rounded-[2.5rem] p-10 relative overflow-hidden group shadow-lg hover:shadow-2xl transition-all">
+                    <span
+                        class="material-symbols-outlined text-8xl absolute -top-4 -right-4 text-primary-container/5 select-none"
+                        style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                    <div class="flex-col md:flex-row gap-8 items-center md:items-start relative z-10">
+                        <img alt="Principal"
+                            class="w-32 h-32 rounded-full object-cover border-4 border-secondary/20 shadow-md"
+                            src="assets/images/magament02.jpg" />
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-bold text-primary">Sr. Bailaja James</h3>
+                            <p class="text-secondary font-label font-bold uppercase tracking-widest text-xs">Principal
+                            </p>
+                            <p class="text-on-surface-variant italic leading-relaxed">“Education is a shared commitment between dedicated teachers, motivated students and enthusiastic parents.” As we are on the threshold of a new academic session, I would like to pen down something from the Principal’s desk to our web page. Each academic year is a new height scaled, another dream realized with new target set for the future. Each member of this esteemed institution is devoted to, bringing their dreams and aspirations into reality through sincerity & perseverance. "</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Academics Grid -->
+    <section class="py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end gap-6 mb-16">
+                <div class="space-y-4">
+                    <h2 class="text-4xl font-headline font-extrabold text-primary">Academic Excellence</h2>
+                    <p class="text-on-surface-variant">Tailored educational journeys for every stage of growth.</p>
+                </div>
+                <button class="bg-primary-container text-white px-8 py-3 rounded-full text-sm font-bold w-full md:w-auto">View
+                    Curriculum</button>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group relative h-96 rounded-3xl overflow-hidden cursor-pointer">
+                    <img alt="Kindergarten"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        src="assets/images/galler01.jpeg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/20 to-transparent flex flex-col justify-end p-8 text-white">
+                        <h4 class="text-2xl font-bold mb-2">Kindergarten</h4>
+                        <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Play-based
+                            learning focusing on sensory development and social skills.</p>
+                    </div>
+                </div>
+                <div class="group relative h-96 rounded-3xl overflow-hidden cursor-pointer">
+                    <img alt="Primary School"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        src="assets/images/galler02.jpeg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/20 to-transparent flex flex-col justify-end p-8 text-white">
+                        <h4 class="text-2xl font-bold mb-2">Primary School</h4>
+                        <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Building
+                            strong foundations in literacy, numeracy, and environmental awareness.</p>
+                    </div>
+                </div>
+                <div class="group relative h-96 rounded-3xl overflow-hidden cursor-pointer">
+                    <img alt="Middle School"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        src="assets/images/galler03.jpeg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/20 to-transparent flex flex-col justify-end p-8 text-white">
+                        <h4 class="text-2xl font-bold mb-2">Middle School</h4>
+                        <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Exploring
+                            subjects in depth with a focus on analytical and creative thinking.</p>
+                    </div>
+                </div>
+                <div class="group relative h-96 rounded-3xl overflow-hidden cursor-pointer">
+                    <img alt="High School"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        src="assets/images/galler04.jpeg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/20 to-transparent flex flex-col justify-end p-8 text-white">
+                        <h4 class="text-2xl font-bold mb-2">High School</h4>
+                        <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Advanced
+                            specialization and preparation for higher education and careers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest News & Upcoming Events -->
+    <section class="relative py-24 bg-cover bg-center" style="background-image:url('assets/image/cources-bg.jpg')">
+        <div class="absolute inset-0 bg-slate-950/75"></div>
+        <div class="relative max-w-7xl mx-auto px-8">
+            <div class="mb-12 text-center text-white">
+                <h2 class="text-4xl font-headline font-extrabold">Latest News & Upcoming Events</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-white/80">Stay updated with recent announcements and the school calendar at a glance.</p>
+            </div>
+            <div class="grid gap-8 lg:grid-cols-2">
+                <div class="relative rounded-[2rem] overflow-hidden min-h-[600px] bg-slate-950/90">
+                    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/50 to-transparent"></div>
+                    <div class="relative z-10 p-10 h-full flex flex-col justify-between">
+                        <div class="space-y-4 max-w-xl">
+                            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-on-secondary font-bold text-xs uppercase tracking-widest">Latest News</span>
+                            <h3 class="text-3xl font-headline font-extrabold text-white">School Bulletin & Announcements</h3>
+                            <p class="text-white/80 max-w-lg">Keep track of the most recent stories from campus, achievements, and student activities.</p>
+                        </div>
+                        <div class="relative mt-10 overflow-hidden rounded-[1.75rem] bg-white/10 p-6 shadow-2xl shadow-slate-900/20">
+                            <div class="news-scroll py-4">
+                                <article class="min-w-[20rem] md:min-w-[26rem] flex-shrink-0 rounded-3xl bg-white shadow-lg overflow-hidden ring-1 ring-slate-200/50">
+                                    <img class="h-48 w-full object-cover" src="assets/images/galler05.jpeg" alt="Annual Day Awards" />
+                                    <div class="p-6 space-y-4">
+                                        <div class="text-sm uppercase tracking-[0.24em] text-secondary font-bold">27 Oct 2024</div>
+                                        <h4 class="text-xl font-bold text-primary">Annual Prize Distribution Celebration</h4>
+                                        <p class="text-sm text-slate-600">Honouring the academic and sports achievers of the previous year.</p>
+                                        <a class="inline-flex items-center gap-2 text-school-blue font-semibold" href="#">Read more <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+                                    </div>
+                                </article>
+                                <article class="min-w-[20rem] md:min-w-[26rem] flex-shrink-0 rounded-3xl bg-white shadow-lg overflow-hidden ring-1 ring-slate-200/50">
+                                    <img class="h-48 w-full object-cover" src="assets/images/slider02.jpg" alt="Children’s Day Carnival" />
+                                    <div class="p-6 space-y-4">
+                                        <div class="text-sm uppercase tracking-[0.24em] text-secondary font-bold">14 Nov 2024</div>
+                                        <h4 class="text-xl font-bold text-primary">Children’s Day Carnival</h4>
+                                        <p class="text-sm text-slate-600">A day of fun, games, and cultural performances for all students.</p>
+                                        <a class="inline-flex items-center gap-2 text-school-blue font-semibold" href="#">Read more <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+                                    </div>
+                                </article>
+                                <article class="min-w-[20rem] md:min-w-[26rem] flex-shrink-0 rounded-3xl bg-white shadow-lg overflow-hidden ring-1 ring-slate-200/50">
+                                    <img class="h-48 w-full object-cover" src="assets/images/about.jpg" alt="Parent-Teacher Symposium" />
+                                    <div class="p-6 space-y-4">
+                                        <div class="text-sm uppercase tracking-[0.24em] text-secondary font-bold">05 Dec 2024</div>
+                                        <h4 class="text-xl font-bold text-primary">Parent-Teacher Symposium</h4>
+                                        <p class="text-sm text-slate-600">Interactive session on child psychology and digital wellbeing.</p>
+                                        <a class="inline-flex items-center gap-2 text-school-blue font-semibold" href="#">Read more <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+                                    </div>
+                                </article>
+                                <article class="min-w-[20rem] md:min-w-[26rem] flex-shrink-0 rounded-3xl bg-white shadow-lg overflow-hidden ring-1 ring-slate-200/50">
+                                    <img class="h-48 w-full object-cover" src="assets/images/galler03.jpeg" alt="Sports Meet" />
+                                    <div class="p-6 space-y-4">
+                                        <div class="text-sm uppercase tracking-[0.24em] text-secondary font-bold">18 Dec 2024</div>
+                                        <h4 class="text-xl font-bold text-primary">Inter-School Sports Meet</h4>
+                                        <p class="text-sm text-slate-600">A showcase of athletic talent and teamwork across our campus.</p>
+                                        <a class="inline-flex items-center gap-2 text-school-blue font-semibold" href="#">Read more <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+                                    </div>
+                                </article>
+                                <article class="min-w-[20rem] md:min-w-[26rem] flex-shrink-0 rounded-3xl bg-white shadow-lg overflow-hidden ring-1 ring-slate-200/50">
+                                    <img class="h-48 w-full object-cover" src="assets/images/slider01.jpg" alt="Science Expo" />
+                                    <div class="p-6 space-y-4">
+                                        <div class="text-sm uppercase tracking-[0.24em] text-secondary font-bold">10 Jan 2025</div>
+                                        <h4 class="text-xl font-bold text-primary">Annual Science Expo</h4>
+                                        <p class="text-sm text-slate-600">Students present innovative projects and STEM discoveries.</p>
+                                        <a class="inline-flex items-center gap-2 text-school-blue font-semibold" href="#">Read more <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+                                    </div>
+                                </article>
+                                <article class="min-w-[20rem] md:min-w-[26rem] flex-shrink-0 rounded-3xl bg-white shadow-lg overflow-hidden ring-1 ring-slate-200/50">
+                                    <img class="h-48 w-full object-cover" src="assets/images/galler05.jpeg" alt="Annual Day Awards" />
+                                    <div class="p-6 space-y-4">
+                                        <div class="text-sm uppercase tracking-[0.24em] text-secondary font-bold">27 Oct 2024</div>
+                                        <h4 class="text-xl font-bold text-primary">Annual Prize Distribution Celebration</h4>
+                                        <p class="text-sm text-slate-600">Honouring the academic and sports achievers of the previous year.</p>
+                                        <a class="inline-flex items-center gap-2 text-school-blue font-semibold" href="#">Read more <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative rounded-[2rem] overflow-hidden min-h-[600px] bg-cover bg-center">
+                    <div class="absolute inset-0 bg-slate-950/75"></div>
+                    <div class="relative z-10 p-10 h-full flex flex-col justify-between text-white">
+                        <div class="space-y-4 max-w-xl">
+                            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 font-bold text-sm uppercase tracking-widest">Upcoming Events</span>
+                            <h3 class="text-2xl font-headline font-extrabold">Calendar Highlights for the Season</h3>
+                            <p class="text-white/80 max-w-lg ">A curated view of important school events with dates, details, and campus celebrations.</p>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="rounded-[2rem] bg-white/10 p-6 ring-1 ring-white/20 backdrop-blur-xl">
+                                <div class="flex items-center gap-4 text-secondary">
+                                    <span class="material-symbols-outlined text-xl">event</span>
+                                    <div>
+                                        <p class="text-xs uppercase tracking-[0.3em] text-white/70">Oct 25, 2024</p>
+                                        <h4 class="text-xl font-bold">Annual Prize Distribution</h4>
+                                    </div>
+                                </div>
+                                <p class="mt-4 text-white/75">Honoring the academic and sports achievers of the previous year in a grand ceremony.</p>
+                            </div>
+                            <div class="rounded-[2rem] bg-white/10 p-6 ring-1 ring-white/20 backdrop-blur-xl">
+                                <div class="flex items-center gap-4 text-secondary">
+                                    <span class="material-symbols-outlined text-xl">sports_esports</span>
+                                    <div>
+                                        <p class="text-xs uppercase tracking-[0.3em] text-white/70">Nov 14, 2024</p>
+                                        <h4 class="text-xl font-bold">Children’s Day Carnival</h4>
+                                    </div>
+                                </div>
+                                <p class="mt-4 text-white/75">A day of fun, games, and cultural performances designed for every student.</p>
+                            </div>
+                            <div class="rounded-[2rem] bg-white/10 p-6 ring-1 ring-white/20 backdrop-blur-xl">
+                                <div class="flex items-center gap-4 text-secondary">
+                                    <span class="material-symbols-outlined text-xl">psychology</span>
+                                    <div>
+                                        <p class="text-xs uppercase tracking-[0.3em] text-white/70">Dec 05, 2024</p>
+                                        <h4 class="text-xl font-bold">Parent-Teacher Symposium</h4>
+                                    </div>
+                                </div>
+                                <p class="mt-4 text-white/75">Interactive session on child psychology and digital wellbeing for families.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Showcase Showcase Grid Section (Added per Edit Request) -->
+    <section class="bg-white border-y border-gray-100">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3">
+                <!-- Management -->
+                <a class="p-16 border-b md:border-b-0 md:border-r border-gray-200 hover:bg-gray-50 transition-colors group flex items-center justify-center text-center"
+                    href="#">
+                    <span
+                        class="text-school-dark font-bold text-lg md:text-xl tracking-widest uppercase group-hover:text-school-blue transition-colors">Management</span>
+                </a>
+                <!-- Faculty -->
+                <a class="p-16 border-b md:border-b-0 md:border-r border-gray-200 hover:bg-gray-50 transition-colors group flex items-center justify-center text-center"
+                    href="#">
+                    <span
+                        class="text-school-dark font-bold text-lg md:text-xl tracking-widest uppercase group-hover:text-school-blue transition-colors">Faculty</span>
+                </a>
+                <!-- Alumni -->
+                <a class="p-16 border-b md:border-b-0 border-gray-200 hover:bg-gray-50 transition-colors group flex items-center justify-center text-center"
+                    href="#">
+                    <span
+                        class="text-school-dark font-bold text-lg md:text-xl tracking-widest uppercase group-hover:text-school-blue transition-colors">Alumni</span>
+                </a>
+                <!-- Achievements -->
+                <a class="p-16 border-b md:border-b-0 md:border-r border-gray-200 hover:bg-gray-50 transition-colors group flex items-center justify-center text-center"
+                    href="#">
+                    <span
+                        class="text-school-dark font-bold text-lg md:text-xl tracking-widest uppercase group-hover:text-school-blue transition-colors">Achievements</span>
+                </a>
+                <!-- Co-Curricular Activities -->
+                <a class="p-16 border-b md:border-b-0 md:border-r border-gray-200 hover:bg-gray-50 transition-colors group flex items-center justify-center text-center"
+                    href="#">
+                    <span
+                        class="text-school-dark font-bold text-lg md:text-xl tracking-widest uppercase group-hover:text-school-blue transition-colors text-center leading-tight">Co-Curricular<br />Activities</span>
+                </a>
+                <!-- Alumni (Second instance per request) -->
+                <a class="p-16 hover:bg-gray-50 transition-colors group flex items-center justify-center text-center"
+                    href="#">
+                    <span
+                        class="text-school-dark font-bold text-lg md:text-xl tracking-widest uppercase group-hover:text-school-blue transition-colors">Alumni</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Stats Counter Section -->
+    <section class="py-20 bg-primary-container text-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+                <div class="space-y-2">
+                    <span class="text-5xl font-extrabold text-secondary-fixed">35+</span>
+                    <p class="text-blue-200 font-label uppercase tracking-widest text-xs">Years of Excellence</p>
+                </div>
+                <div class="space-y-2">
+                    <span class="text-5xl font-extrabold text-secondary-fixed">2.5k+</span>
+                    <p class="text-blue-200 font-label uppercase tracking-widest text-xs">Active Students</p>
+                </div>
+                <div class="space-y-2">
+                    <span class="text-5xl font-extrabold text-secondary-fixed">120+</span>
+                    <p class="text-blue-200 font-label uppercase tracking-widest text-xs">Expert Faculty</p>
+                </div>
+                <div class="space-y-2">
+                    <span class="text-5xl font-extrabold text-secondary-fixed">15+</span>
+                    <p class="text-blue-200 font-label uppercase tracking-widest text-xs">Acre Campus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section -->
+    <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl font-headline font-extrabold text-primary">Life at St. Joseph’s</h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto">Experience our vibrant campus through the lens.
+                    From daily routines to grand celebrations.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-10 items-start">
+                <!-- Left: Gallery (auto scroll) -->
+                <div class="rounded-[3rem] overflow-hidden bg-white/100 backdrop-blur-md border border-white/10">
+                    <div class="px-8 pt-10 pb-6">
+                        <h3 class="text-primary text-2xl font-bold">Campus Gallery</h3>
+                        <p class="text-primary text-sm mt-2">Auto-scrolling left to right</p>
+                    </div>
+
+                    <div class="h-[400px] overflow-hidden">
+                        <div class="gallery-scroll h-full flex gap-6 px-8 pb-8" aria-hidden="true">
+                            <img class="min-w-[22rem] md:min-w-[20rem] h-full object-cover rounded-[2rem] shadow-lg" src="assets/images/galler01.jpeg" alt="Gallery 1" />
+                            <img class="min-w-[22rem] md:min-w-[20rem] h-full object-cover rounded-[2rem] shadow-lg" src="assets/images/galler02.jpeg" alt="Gallery 2" />
+                            <img class="min-w-[22rem] md:min-w-[20rem] h-full object-cover rounded-[2rem] shadow-lg" src="assets/images/galler03.jpeg" alt="Gallery 3" />
+                            <img class="min-w-[22rem] md:min-w-[20rem] h-full object-cover rounded-[2rem] shadow-lg" src="assets/images/galler04.jpeg" alt="Gallery 4" />
+
+                            <!-- duplicate for seamless scroll -->
+                            <img class="min-w-[22rem] md:min-w-[20rem] h-full object-cover rounded-[2rem] shadow-lg" src="assets/images/galler01.jpeg" alt="Gallery 1" />
+                            <img class="min-w-[22rem] md:min-w-[20rem] h-full object-cover rounded-[2rem] shadow-lg" src="assets/images/galler02.jpeg" alt="Gallery 2" />
+                            <img class="min-w-[22rem] md:min-w-[20rem] h-full object-cover rounded-[2rem] shadow-lg" src="assets/images/galler03.jpeg" alt="Gallery 3" />
+                            <img class="min-w-[22rem] md:min-w-[20rem] h-full object-cover rounded-[2rem] shadow-lg" src="assets/images/galler04.jpeg" alt="Gallery 4" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: YouTube video -->
+                <div class="relative rounded-[3rem] overflow-hidden bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary-container/40 via-transparent to-blue-900/20"></div>
+
+                    <div class="relative p-8">
+                        <div class="text-white">
+                            <h3 class="text-2xl font-bold">YouTube Highlights</h3>
+                            <p class="text-white/70 text-sm mt-2">Play embedded campus video</p>
+                        </div>
+
+                        <div class="mt-6 rounded-[2.5rem] overflow-hidden">
+                            <div class="relative" style="padding-top:56.25%">
+                                <iframe
+                                    class="absolute inset-0 w-full h-full"
+                                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                    title="Campus Video"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex flex-wrap gap-4">
+                            <a href="#" class="bg-secondary-container text-on-secondary-container px-6 py-3 rounded-2xl font-bold text-sm hover:scale-105 transition-transform">Watch More</a>
+                            <a href="#" class="bg-white/60 border border-white/20 text-black px-6 py-3 rounded-2xl font-bold text-sm hover:bg-white hover:text-primary transition-colors">Visit Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .gallery-scroll {
+                width: max-content;
+                animation: galleryScroll 24s linear infinite;
+            }
+
+            @keyframes galleryScroll {
+                0% { transform: translateX(-50%); }
+                100% { transform: translateX(0); }
+            }
+        </style>
+    </section>
+    <!-- Testimonials & Admissions CTA -->
+    <section class="py-24 bg-surface overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8">
+            <div
+                class="relative rounded-[4rem] overflow-hidden bg-gradient-to-r from-primary-container to-blue-900 py-20 px-12 md:px-24 text-center text-white">
+                <div class="relative z-10 space-y-8 max-w-4xl mx-auto">
+                    <h2 class="text-5xl font-headline font-extrabold leading-tight">Ready to join the Luminary family?
+                    </h2>
+                    <p class="text-xl text-blue-100">Admissions are currently open for the academic year 2024-25. Secure
+                        your child's future today.</p>
+                    <div class="flex flex-wrap justify-center gap-6 pt-4">
+                        <button
+                            class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-2xl font-bold uppercase tracking-widest hover:scale-105 transition-all shadow-2xl">Apply
+                            Online Now</button>
+                        <button
+                            class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-5 rounded-2xl font-bold uppercase tracking-widest hover:bg-white hover:text-primary-container transition-all">Schedule
+                            a Campus Visit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer
+        class="bg-primary-container text-blue-200 mt-20 pt-24 pb-12 font-body text-sm leading-relaxed overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                <div class="space-y-6">
+                    <span class="text-2xl font-black text-white block">ST. JOSEPH’S MATRIC HR. SEC SCHOOL</span>
+                    <p class="text-blue-300">St. Joseph's Matriculation Higher Secondary School was established in 1981 as a Primary English Medium School, by the Roman Catholic Diocese of Kottar, a Religious Minority. The Bishop of the Diocese is the manager of the school and he appoints ....</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-8">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Academics</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Admissions</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Events</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Gallery</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-8">Contact Us</h4>
+                    <ul class="space-y-4 text-blue-300">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secondary-fixed text-sm">location_on</span>
+                            <span>Bishop's House Campus, Nagercoil, Kanyakumari Dt, Tamilnadu - 629 001</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secondary-fixed text-sm">phone</span>
+                            <span>04652-279252 (H.S.S) / 04652-279718 (PRIMARY)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secondary-fixed text-sm">mail</span>
+                            <span>stjosephmhss1981@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-8">Reach Us</h4>
+                    <div class="overflow-hidden rounded-[1.5rem] border border-white/10 shadow-xl">
+                        <iframe class="w-full h-48"
+                            src="https://www.google.com/maps?q=St+Josephs+Matric+Higher+Secondary+School+Nagercoil&output=embed"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-[#001f35] text-center text-blue-200 py-4 text-xs font-medium">
+        © 2026 St. Joseph's School, Nagercoil. All rights reserved.
+    </div>
+    <script>
+        function toggleNav() {
+            document.getElementById('sideNav').classList.toggle('hidden');
+        }
+
+        function toggleAboutSubmenu() {
+            var submenu = document.getElementById('mobileAboutSubmenu');
+            var chevron = document.getElementById('mobileAboutChevron');
+            submenu.classList.toggle('hidden');
+            chevron.classList.toggle('rotate-180');
+        }
+    </div>
+</body>
+
+</html>
